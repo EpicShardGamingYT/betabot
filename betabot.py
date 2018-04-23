@@ -9,7 +9,7 @@ Client = discord.Client()
 client = commands.Bot(command_prefix = "+")
 @client.event
 async def on_ready():
-    print("Thankyou For Using BETA Bot!")
+    print("Thankyou For Using Jackaboi Beta Bot!")
     await client.change_presence(game=discord.Game(name="BETA"))
 
 @client.event
