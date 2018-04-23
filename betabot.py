@@ -18,7 +18,7 @@ async def on_message(message):
         msg = 'Hello {0.author.mention} How Are You Today'.format(message)
         await client.send_message(message.channel, msg)
     if message.content.startswith('+bye'):
-        msg = 'Goodbye {0.auif messagethor.mention} Hope To See You Soon :wave:'.format(message)
+        msg = 'Goodbye {0.author.mention} Hope To See You Soon :wave:'.format(message)
         await client.send_message(message.channel, msg)
         
 
