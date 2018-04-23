@@ -7,7 +7,6 @@ import os
 
 Client = discord.Client()
 client = commands.Bot(command_prefix = "+")
-client.remove_command("help")
 @client.event
 async def on_ready():
     print("Thankyou For Using BETA Bot!")
@@ -23,5 +22,4 @@ async def on_message(message):
         await client.send_message(message.channel, msg)
         
 
-client.loop.create_task(list_servers())
 client.run(os.getenv('TOKEN'))
