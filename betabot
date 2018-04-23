@@ -11,8 +11,8 @@ client = commands.Bot(command_prefix = "+")
 client.remove_command("help")
 @client.event
 async def on_ready():
-    print("Thankyou For Using Jackaboi Bot!")
-    await client.change_presence(game=discord.Game(name="+commands | BETA"))
+    print("Thankyou For Using BETA Bot!")
+    await client.change_presence(game=discord.Game(name="BETA"))
 
 @client.event
 async def on_message(message):
