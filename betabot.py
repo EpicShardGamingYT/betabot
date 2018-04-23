@@ -19,13 +19,6 @@ async def on_message(message):
         await client.send_message(message.channel, msg)
     if message.content.startswith(';bye'):
         msg = 'Goodbye {0.author.mention} Hope To See You Soon :wave:'.format(message)
-        await client.send_message(message.channel, msg)
-        
-  if message.content.startswith('help'):
-        msg = 'help
-        hello
-        bye'.format(message)
         await client.send_message(message.channel, msg)      
-        
 
 client.run(os.getenv('TOKEN'))
