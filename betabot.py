@@ -21,6 +21,6 @@ async def on_message(message):
         msg = 'Goodbye {0.author.mention} Hope To See You Soon :wave:'.format(message)
         await client.send_message(message.channel, msg)
     if message.content.startswith('=test'):
-        msg = 'Goodbye /n{0.author.mention}/n Hope To See You Soon :wave:'.format(message)
+        msg = 'Goodbye /n {0.author.mention} /n Hope To See You Soon :wave:'.format(message)
         await client.send_message(message.channel, msg)    
 client.run(os.getenv('TOKEN'))
