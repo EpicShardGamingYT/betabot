@@ -22,19 +22,8 @@ async def on_message(message):
     if message.content.startswith('+bye'):
         msg = 'Goodbye {0.author.mention} Hope To See You Soon :wave:'.format(message)
         await client.send_message(message.channel, msg)
-    if message.content.startswith('+commands'):
-        msg = ' {0.author.mention} The Bot Commands are `+hello` `+bye` `+say` `+8ball` `+mute` `+unmute` `+invite` `+feedback` `+version` `+commands` More Coming Soon!'.format(message)
-        await client.send_message(message.channel, msg)
-    if message.content.startswith('+invite'):
-        msg = 'Want To Invte Me To Your Discord Press This Link https://goo.gl/94ZSqo'.format(message)
-        await client.send_message(message.channel, msg)
-    if message.content.startswith('+feedback'):
-        msg = 'To Give Feedback Join The Creators Discord https://discord.gg/Tqa3Kn'.format(message)
-        await client.send_message(message.channel, msg)
-    
-    if message.content.startswith('+version'):
-        msg = 'Jackaboi Bot Is In Version 1.0.3 Beta'.format(message)
-        await client.send_message(message.channel, msg)    
+        
+        
         
         
     await client.process_commands(message)
