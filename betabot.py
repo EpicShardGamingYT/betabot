@@ -18,11 +18,10 @@ async def on_message(message):
         msg = 'Hello {0.author.mention} How Are You Today'.format(message)
         await client.send_message(message.channel, msg)
     if message.author.id == "344967220025098242":
-    if message.content.lower().startswith('=test'):
-        msg = 'Hello {message.author.mention} How Are You Today'
+     if message.content.startswith('=test'):
+        msg = 'Hello {0.author.mention} How Are You Today'.format(message)
         await client.send_message(message.channel, msg)
-else:
-    testddd
-    
+else: 
     only Jackaboi#8319 Can Use This Command
+    
 client.run(os.getenv('TOKEN'))
