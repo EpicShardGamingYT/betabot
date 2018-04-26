@@ -18,7 +18,7 @@ async def on_message(message):
         msg = 'Hello {0.author.mention} How Are You Today'.format(message)
         await client.send_message(message.channel, msg)
     if message.author.id == "344967220025098242":
-    if message.content.startswith('=test'):
+     if message.content.startswith('=test'):
         msg = 'Hello {0.author.mention} How Are You Today'.format(message)
         await client.send_message(message.channel, msg)
  else: 
