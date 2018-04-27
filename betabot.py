@@ -21,7 +21,12 @@ async def on_message(message):
     if message.content.startswith('=bye'):
         msg = 'GoodBye {0.author.mention} Hope To See You Again Soon :wave: '.format(message)
         await client.send_message(message.channel, msg)
-
+    if message.content.startswith('=test'):
+        if message.author.id == "344967220025098242":
+            msg = 'Hello {0.author.mention} How Are You Today'.format(message)
+            await client.send_message(message.channel, msg)
+        else: 
+            await client.send_message(message.channel, "Only Jackaboi#8319 can use this command")
    
 
 client.run(os.getenv('TOKEN'))
