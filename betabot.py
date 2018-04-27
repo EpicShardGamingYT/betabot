@@ -18,11 +18,11 @@ async def on_message(message):
         msg = 'Hello {0.author.mention} How Are You Today'.format(message)
         await client.send_message(message.channel, msg)
 
-    if message.author.id == "344967220025098242":
-       message.content.startswith('=test'):
+    if message.content.startswith('=test'):
+    if message.author.id/ctx.message.author.id == "344967220025098242":
         msg = 'Hello {0.author.mention} How Are You Today'.format(message)
         await client.send_message(message.channel, msg)
-else: 
-     only Jackaboi#8319 Can Use This Command
+    else:
+        Only jack can use this boi
 
 client.run(os.getenv('TOKEN'))
